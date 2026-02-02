@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Krira Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <nav class="bg-slate-900 text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="Kriratech logo.jpeg" alt="Krira Tech Logo" class="w-10 h-10 object-contain">
+                    <div>
+                        <h1 class="text-2xl font-bold">Krira Tech</h1>
+                        <p class="text-xs text-gray-400">Embedded Systems & Robotics</p>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="font-semibold text-white hover:text-cyan-400 transition-colors duration-300">Home</a>
+                    <a href="about.html" class="font-semibold text-white hover:text-cyan-400 transition-colors duration-300">About Us</a>
+                    <a href="services.html" class="font-semibold text-cyan-400 transition-colors duration-300">Services</a>
+                    <a href="products.html" class="font-semibold text-white hover:text-cyan-400 transition-colors duration-300">Products</a>
+                    <a href="contact.html" class="font-semibold text-white hover:text-cyan-400 transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="min-h-screen">
+            <!-- Services Icons Header -->
+            <div class="bg-gradient-to-r from-slate-900 to-blue-900 text-white py-20">
+                <div class="max-w-6xl mx-auto px-6">
+                    <h1 class="text-6xl font-bold mb-6 text-center">Our Services</h1>
+                    <p class="text-2xl text-gray-300 text-center mb-12">Click on a service to learn more</p>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <!-- Robotics Development -->
+                        <a href="#robotics" class="bg-white bg-opacity-10 backdrop-blur hover:bg-opacity-20 rounded-xl p-6 text-center transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                            <svg class="w-16 h-16 text-cyan-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="4" y="4" width="16" height="16" rx="2" stroke-width="2"/>
+                                <rect x="9" y="9" width="6" height="6" stroke-width="2"/>
+                            </svg>
+                            <h3 class="text-white font-bold">Robotics Development</h3>
+                        </a>
+
+                        <!-- IoT Systems -->
+                        <a href="#iot" class="bg-white bg-opacity-10 backdrop-blur hover:bg-opacity-20 rounded-xl p-6 text-center transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                            <svg class="w-16 h-16 text-blue-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" stroke-width="2"/>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke-width="2"/>
+                            </svg>
+                            <h3 class="text-white font-bold">IoT Systems</h3>
+                        </a>
+
+                        <!-- Safety Monitoring -->
+                        <a href="#safety" class="bg-white bg-opacity-10 backdrop-blur hover:bg-opacity-20 rounded-xl p-6 text-center transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                            <svg class="w-16 h-16 text-red-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="5" y="11" width="14" height="10" rx="2" stroke-width="2"/>
+                                <circle cx="12" cy="16" r="1" fill="currentColor"/>
+                                <path d="M12 3v5" stroke-width="2"/>
+                            </svg>
+                            <h3 class="text-white font-bold">Safety Monitoring</h3>
+                        </a>
+
+                        <!-- Product Prototyping -->
+                        <a href="#prototyping" class="bg-white bg-opacity-10 backdrop-blur hover:bg-opacity-20 rounded-xl p-6 text-center transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                            <svg class="w-16 h-16 text-purple-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" stroke-width="2"/>
+                            </svg>
+                            <h3 class="text-white font-bold">Product Prototyping</h3>
+                        </a>
+
+                        <!-- Air Sterilizer -->
+                        <a href="#air-sterilizer" class="bg-white bg-opacity-10 backdrop-blur hover:bg-opacity-20 rounded-xl p-6 text-center transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                            <svg class="w-16 h-16 text-teal-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M14 2c3.9 0 7 3.1 7 7v3c0 3.9-3.1 7-7 7H4V9c0-3.9 3.1-7 7-7h3z" stroke-width="2"/>
+                                <path d="M3 12h6M3 15h4M3 9h8" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="17" cy="9" r="1.5" fill="currentColor"/>
+                                <circle cx="15" cy="13" r="1" fill="currentColor"/>
+                                <circle cx="18" cy="15" r="1" fill="currentColor"/>
+                            </svg>
+                            <h3 class="text-white font-bold">Air Sterilizer</h3>
+                        </a>
+
+                        <!-- Drone Services -->
+                        <a href="#drone" class="bg-white bg-opacity-10 backdrop-blur hover:bg-opacity-20 rounded-xl p-6 text-center transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                            <svg class="w-16 h-16 text-yellow-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="6" cy="6" r="3" stroke-width="2"/>
+                                <circle cx="18" cy="6" r="3" stroke-width="2"/>
+                                <circle cx="6" cy="18" r="3" stroke-width="2"/>
+                                <circle cx="18" cy="18" r="3" stroke-width="2"/>
+                                <rect x="10" y="10" width="4" height="4" rx="1" stroke-width="2"/>
+                                <path d="M9 11L7 8M15 11L17 8M9 13L7 16M15 13L17 16" stroke-width="2"/>
+                            </svg>
+                            <h3 class="text-white font-bold">Drone Services</h3>
+                        </a>
+
+                        <!-- AI Services -->
+                        <a href="#ai-services" class="bg-white bg-opacity-10 backdrop-blur hover:bg-opacity-20 rounded-xl p-6 text-center transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                            <svg class="w-16 h-16 text-pink-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="3" stroke-width="2"/>
+                                <path d="M12 2v4m0 12v4M2 12h4m12 0h4" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <h3 class="text-white font-bold">AI Services</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-6xl mx-auto px-6 py-16">
+                <div class="space-y-12">
+                    <!-- Robotics Development -->
+                    <div id="robotics" class="bg-white rounded-lg shadow-lg overflow-hidden grid md:grid-cols-3 gap-6 scroll-mt-24">
+                        <div class="bg-gradient-to-br from-cyan-400 to-blue-500 p-8 flex items-center justify-center">
+                            <div class="text-center">
+                                <svg class="w-20 h-20 text-white mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <rect x="4" y="4" width="16" height="16" rx="2" stroke-width="2"/>
+                                    <rect x="9" y="9" width="6" height="6" stroke-width="2"/>
+                                </svg>
+                                <h3 class="text-3xl font-bold text-white">Robotics Development</h3>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 p-8">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-4">What We Provide</h4>
+                            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                                Warehouse robots, object handling bots, self-balancing robotic units, RFID-controlled autonomous systems, and custom robotic mechanisms tailored to your operational requirements.
+                            </p>
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">Benefits</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Reduces manual labor and operational costs</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Increases precision and repeatability</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Operates 24/7 without fatigue</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Scalable to multiple units</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Customizable for specific tasks</span>
+                                </li>
+                            </ul>
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">Where It Can Be Used</h4>
+                            <p class="text-gray-700">
+                                Manufacturing facilities, warehouses, logistics centers, material handling operations, retail automation, hospital logistics, educational institutions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- IoT Systems -->
+                    <div id="iot" class="bg-white rounded-lg shadow-lg overflow-hidden grid md:grid-cols-3 gap-6 scroll-mt-24">
+                        <div class="bg-gradient-to-br from-blue-500 to-purple-500 p-8 flex items-center justify-center">
+                            <div class="text-center">
+                                <svg class="w-20 h-20 text-white mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z" stroke-width="2"/>
+                                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke-width="2"/>
+                                </svg>
+                                <h3 class="text-3xl font-bold text-white">IoT Systems</h3>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 p-8">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-4">What We Provide</h4>
+                            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                                Wi-Fi and Bluetooth monitoring dashboards, air quality index systems, live data logging platforms, environmental monitoring stations, and cloud-connected sensor networks.
+                            </p>
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">Benefits</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Real-time remote monitoring from anywhere</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Historical data tracking and analytics</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Automated alerts and notifications</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Energy-efficient wireless operation</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Easy integration with existing systems</span>
+                                </li>
+                            </ul>
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">Where It Can Be Used</h4>
+                            <p class="text-gray-700">
+                                Smart buildings, industrial facilities, agriculture, environmental monitoring, smart homes, healthcare facilities, research laboratories.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Safety Monitoring -->
+                    <div id="safety" class="bg-white rounded-lg shadow-lg overflow-hidden grid md:grid-cols-3 gap-6 scroll-mt-24">
+                        <div class="bg-gradient-to-br from-red-500 to-pink-500 p-8 flex items-center justify-center">
+                            <div class="text-center">
+                                <svg class="w-20 h-20 text-white mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <rect x="5" y="11" width="14" height="10" rx="2" stroke-width="2"/>
+                                    <circle cx="12" cy="16" r="1" fill="currentColor"/>
+                                    <path d="M12 3v5" stroke-width="2"/>
+                                </svg>
+                                <h3 class="text-3xl font-bold text-white">Safety Monitoring</h3>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 p-8">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-4">What We Provide</h4>
+                            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                                Eye blink safety systems, disturbance alarm mechanisms, early warning solutions for equipment and personnel, vibration detection systems, and drowsiness monitoring.
+                            </p>
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">Benefits</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Prevents accidents before they occur</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Immediate alert generation</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Reduces workplace injuries</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Continuous 24/7 monitoring</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Complements existing safety protocols</span>
+                                </li>
+                            </ul>
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">Where It Can Be Used</h4>
+                            <p class="text-gray-700">
+                                Manufacturing plants, construction sites, mining operations, transportation, heavy machinery operations, security systems.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Product Prototyping -->
+                    <div id="prototyping" class="bg-white rounded-lg shadow-lg overflow-hidden grid md:grid-cols-3 gap-6 scroll-mt-24">
+                        <div class="bg-gradient-to-br from-purple-500 to-indigo-500 p-8 flex items-center justify-center">
+                            <div class="text-center">
+                                <svg class="w-20 h-20 text-white mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" stroke-width="2"/>
+                                </svg>
+                                <h3 class="text-3xl font-bold text-white">Product Prototyping</h3>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 p-8">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-4">What We Provide</h4>
+                            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                                End-to-end hardware development for startups and institutions, from concept validation to functional prototypes, PCB design, enclosure design, and production-ready documentation.
+                            </p>
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">Benefits</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Rapid concept-to-prototype development</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Cost-effective proof of concept</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Iterative design refinement</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Production-ready solutions</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Technical documentation included</span>
+                                </li>
+                            </ul>
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">Where It Can Be Used</h4>
+                            <p class="text-gray-700">
+                                Startups launching hardware products, research institutions, product development companies, innovation labs, educational projects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Air Sterilizer -->
+                    <div id="air-sterilizer" class="bg-white rounded-lg shadow-lg overflow-hidden grid md:grid-cols-3 gap-6 scroll-mt-24">
+                        <div class="bg-gradient-to-br from-teal-500 to-emerald-500 p-8 flex items-center justify-center">
+                            <div class="text-center">
+                                <svg class="w-20 h-20 text-white mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M14 2c3.9 0 7 3.1 7 7v3c0 3.9-3.1 7-7 7H4V9c0-3.9 3.1-7 7-7h3z" stroke-width="2"/>
+                                    <path d="M3 12h6M3 15h4M3 9h8" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="17" cy="9" r="1.5" fill="currentColor"/>
+                                    <circle cx="15" cy="13" r="1" fill="currentColor"/>
+                                    <circle cx="18" cy="15" r="1" fill="currentColor"/>
+                                </svg>
+                                <h3 class="text-3xl font-bold text-white">Air Sterilizer</h3>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 p-8">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-4">What We Provide</h4>
+                            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                                Air sterilization systems for removing bacteria, viruses, dust, and harmful pollutants from indoor air, UV-based disinfection units, smart air quality monitoring, and automated purification solutions.
+                            </p>
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">Benefits</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-teal-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Improves indoor air quality</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-teal-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Kills airborne bacteria and viruses</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-teal-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Reduces risk of infections</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-teal-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Eliminates odors and harmful particles</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-teal-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Provides continuous real-time purification</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-teal-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Low maintenance and energy efficient</span>
+                                </li>
+                            </ul>
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">Where It Can Be Used</h4>
+                            <p class="text-gray-700 mb-6">
+                                Hospitals and clinics, laboratories, schools and colleges, offices, factories, public transport, shopping malls, hotels, homes, and clean rooms.
+                            </p>
+                            <h4 class="text-xl font-bold text-gray-900 mb-4">Download Brochures</h4>
+                            <div class="space-y-3">
+                                <a href="Air Quality Index Monitor.pdf" download class="flex items-center gap-3 bg-teal-50 hover:bg-teal-100 p-4 rounded-lg transition-all duration-300 border-2 border-teal-200 hover:border-teal-400">
+                                    <svg class="w-8 h-8 text-teal-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" stroke-width="2"/>
+                                        <path d="M14 3v6h6M12 11v6m-3-3l3 3 3-3" stroke-width="2"/>
+                                    </svg>
+                                    <div>
+                                        <p class="font-bold text-gray-900">Air Quality Index Monitor</p>
+                                        <p class="text-sm text-gray-600">Download PDF Brochure</p>
+                                    </div>
+                                </a>
+                                <a href="Industrial Air Sterilization system.pdf" download class="flex items-center gap-3 bg-teal-50 hover:bg-teal-100 p-4 rounded-lg transition-all duration-300 border-2 border-teal-200 hover:border-teal-400">
+                                    <svg class="w-8 h-8 text-teal-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" stroke-width="2"/>
+                                        <path d="M14 3v6h6M12 11v6m-3-3l3 3 3-3" stroke-width="2"/>
+                                    </svg>
+                                    <div>
+                                        <p class="font-bold text-gray-900">Industrial Air Sterilization System</p>
+                                        <p class="text-sm text-gray-600">Download PDF Brochure</p>
+                                    </div>
+                                </a>
+                                <a href="Krira Tech Air Sterilization a Healthier Life.pdf" download class="flex items-center gap-3 bg-teal-50 hover:bg-teal-100 p-4 rounded-lg transition-all duration-300 border-2 border-teal-200 hover:border-teal-400">
+                                    <svg class="w-8 h-8 text-teal-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" stroke-width="2"/>
+                                        <path d="M14 3v6h6M12 11v6m-3-3l3 3 3-3" stroke-width="2"/>
+                                    </svg>
+                                    <div>
+                                        <p class="font-bold text-gray-900">Krira Tech Air Sterilization - A Healthier Life</p>
+                                        <p class="text-sm text-gray-600">Download PDF Brochure</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Drone Services -->
+                    <div id="drone" class="bg-white rounded-lg shadow-lg overflow-hidden grid md:grid-cols-3 gap-6 scroll-mt-24">
+                        <div class="bg-gradient-to-br from-yellow-500 to-orange-500 p-8 flex items-center justify-center">
+                            <div class="text-center">
+                                <svg class="w-20 h-20 text-white mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <circle cx="6" cy="6" r="3" stroke-width="2"/>
+                                    <circle cx="18" cy="6" r="3" stroke-width="2"/>
+                                    <circle cx="6" cy="18" r="3" stroke-width="2"/>
+                                    <circle cx="18" cy="18" r="3" stroke-width="2"/>
+                                    <rect x="10" y="10" width="4" height="4" rx="1" stroke-width="2"/>
+                                    <path d="M9 11L7 8M15 11L17 8M9 13L7 16M15 13L17 16" stroke-width="2"/>
+                                </svg>
+                                <h3 class="text-3xl font-bold text-white">Drone Services</h3>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 p-8">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-4">What We Provide</h4>
+                            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                                Aerial surveillance and monitoring, industrial inspection drones, mapping and surveying solutions, real-time video transmission systems, and customized drone-based automation services.
+                            </p>
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">Benefits</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Faster data collection and inspections</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Access to hard-to-reach and hazardous areas</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">High-resolution aerial imaging</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Reduces manpower and operational costs</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Improves decision-making with real-time data</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Increases safety and efficiency</span>
+                                </li>
+                            </ul>
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">Where It Can Be Used</h4>
+                            <p class="text-gray-700">
+                                Construction sites, agriculture fields, mining areas, infrastructure inspection (bridges, towers, pipelines), disaster management, traffic monitoring, security and surveillance, and environmental monitoring.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- AI Services -->
+                    <div id="ai-services" class="bg-white rounded-lg shadow-lg overflow-hidden grid md:grid-cols-3 gap-6 scroll-mt-24">
+                        <div class="bg-gradient-to-br from-pink-500 to-rose-500 p-8 flex items-center justify-center">
+                            <div class="text-center">
+                                <svg class="w-20 h-20 text-white mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="3" stroke-width="2"/>
+                                    <path d="M12 2v4m0 12v4M2 12h4m12 0h4" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <h3 class="text-3xl font-bold text-white">AI Services</h3>
+                            </div>
+                        </div>
+                        <div class="md:col-span-2 p-8">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-4">What We Provide</h4>
+                            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                                AI-integrated electronic systems, smart automation devices, embedded AI controllers, sensor-based intelligent machines, real-time data processing units, and autonomous control solutions for industrial and commercial use.
+                            </p>
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">Benefits</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-pink-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Enables intelligent decision-making in machines</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-pink-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Reduces manual intervention</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-pink-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Improves system accuracy and response time</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-pink-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Increases productivity and operational efficiency</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-pink-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Supports predictive maintenance</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 text-pink-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <polyline points="9 18 15 12 9 6" stroke-width="2"/>
+                                    </svg>
+                                    <span class="text-gray-700">Enhances system reliability and safety</span>
+                                </li>
+                            </ul>
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">Where It Can Be Used</h4>
+                            <p class="text-gray-700">
+                                Manufacturing plants, smart factories, robotics systems, warehouses, automotive systems, smart buildings, agriculture automation, energy management systems, and process control industries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-20 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-2xl shadow-2xl p-12">
+                    <h2 class="text-4xl font-bold text-white mb-8 text-center">Why Our Solutions Matter</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-white bg-opacity-20 backdrop-blur rounded-lg p-6">
+                            <h3 class="text-2xl font-bold text-white mb-3">Reduces Manual Operations</h3>
+                            <p class="text-white text-lg opacity-90">Automate repetitive tasks and free up human resources for higher-value work</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 backdrop-blur rounded-lg p-6">
+                            <h3 class="text-2xl font-bold text-white mb-3">Improves Safety & Efficiency</h3>
+                            <p class="text-white text-lg opacity-90">Prevent accidents and optimize processes with intelligent monitoring and control</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 backdrop-blur rounded-lg p-6">
+                            <h3 class="text-2xl font-bold text-white mb-3">Smart Automation with Sensor Logic</h3>
+                            <p class="text-white text-lg opacity-90">Make decisions based on real-time data from multiple sensor inputs</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 backdrop-blur rounded-lg p-6">
+                            <h3 class="text-2xl font-bold text-white mb-3">Expandable and Future-Upgrade Ready</h3>
+                            <p class="text-white text-lg opacity-90">Our modular designs allow easy addition of new features and capabilities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="Kriratech logo.jpeg" alt="Krira Tech Logo" class="w-8 h-8 object-contain">
+                        <h3 class="text-xl font-bold">Krira Tech</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        Building intelligent automation solutions for a smarter tomorrow
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="index.html" class="block text-gray-400 hover:text-cyan-400 transition-colors">Home</a>
+                        <a href="about.html" class="block text-gray-400 hover:text-cyan-400 transition-colors">About Us</a>
+                        <a href="services.html" class="block text-gray-400 hover:text-cyan-400 transition-colors">Services</a>
+                        <a href="projects.html" class="block text-gray-400 hover:text-cyan-400 transition-colors">Projects</a>
+                        <a href="contact.html" class="block text-gray-400 hover:text-cyan-400 transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Our Expertise</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>Embedded Systems</p>
+                        <p>Robotics Development</p>
+                        <p>IoT Solutions</p>
+                        <p>AI Services</p>
+                        <p>Drone Services</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-400 text-lg mb-2">
+                    Embedded Systems | Robotics | IoT | AI | Automation
+                </p>
+                <p class="text-gray-500">© 2025 Krira Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
